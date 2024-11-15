@@ -1,5 +1,3 @@
-import React from "react";
-
 interface FeatureCardProps {
   title: string;
   description: string;
