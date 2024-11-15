@@ -6,23 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Not Found</title>
     <script>
-      // Wait for the page to load, then redirect
-      window.addEventListener('load', function () {
-        // Get the current path from the browser's location
-        const currentPath = window.location.pathname;
-
-        // Ensure we're not on the 404 page itself
-        if (currentPath !== "/404.html") {
-          // Redirect to the last valid page
-          window.location.replace(currentPath); // This will reload the page and render the correct route
-        } else {
-          // Optionally, you could display a message here if you like
-          document.body.innerHTML = '<p>Page not found. Redirecting...</p>';
-        }
-      });
+      // Redirect all 404s to the main index.html page
+      window.location.replace("/Yakt-site/");
     </script>
   </head>
   <body>
-    <p>Redirecting to the last valid page...</p>
+    <p>If you're seeing this message, your page was not found. Redirecting...</p>
   </body>
 </html>
