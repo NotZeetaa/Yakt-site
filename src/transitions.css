@@ -29,4 +29,26 @@
 .fade-in-visible {
   opacity: 1;
 }
+
+.mobile-menu-enter {
+  opacity: 0;
+  transform: translateY(-10%);
+}
+
+.mobile-menu-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.mobile-menu-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile-menu-exit-active {
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: opacity 300ms, transform 300ms;
+}
   
